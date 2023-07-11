@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cows and Bulls</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <h1 class="game_header">Cows and Bulls</h1>
+    <p>Guess the 4-digit number:</p>
+    <input type="text" id="guessInput" maxlength="4" />
+    <button onclick="addRow()">Guess</button>
+    <div class="window">
+        <p class="message"></p>
+        <!-- <p id="result"></p> -->
+        <table class="table" id="result_table">
+            <thead class="table_head">
+                <th> Attempt </th>
+                <th> Guess </th>
+                <th> Cows </th>
+                <th> Bulls </th>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+
+    <script type="text/javascript" src="./main.js"></script>
+
+</body>
+
+</html>

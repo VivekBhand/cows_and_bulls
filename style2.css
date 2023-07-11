@@ -1,0 +1,71 @@
+/* Table styles */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table_head th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  padding: 10px;
+  text-align: center;
+}
+
+.table td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Form styles */
+#guessInput {
+  margin-bottom: 10px;
+  padding: 8px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  text-align: center;
+  width: 200px;
+  transition: border-color 0.3s ease-in-out;
+}
+
+button {
+  padding: 10px 16px;
+  border-radius: 3px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Game message styles */
+.message {
+  text-align: center;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+/* Animations */
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Apply animations */
+.window {
+  animation: slideIn 0.5s ease-in-out;
+}

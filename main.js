@@ -54,10 +54,11 @@ function addRow() {
     }
 
     if (bulls === 4) {
-        document.getElementsByClassName("message")[0].innerHTML =
-            "Hurray ! You won !!";
-        // row.classList.add("winning-row");
-        alert("Congratulations! You won the game!");
+        document.getElementsByClassName("message")[0].innerHTML = "Hurray ! You won on ${num} try !!";
+        const letterImageDiv = document.querySelector(".letter-image");
+        letterImageDiv.style.visibility = "visible";
+        letterImageDiv.style.display = "block";
+        // alert("Congratulations! You won the game!");
     }
 
     let table = document.getElementById("result_table");
@@ -103,7 +104,7 @@ const guessInput = document.getElementById("guessInput");
 const submitBtn = document.querySelector("button");
 
 guessInput.addEventListener("input", function () {
-  if (guessInput.value.length === 4) {
-    submitBtn.click();
-  }
+    if (guessInput.value.length === 4) {
+        submitBtn.click();
+    }
 });

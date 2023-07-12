@@ -1,2 +1,2 @@
 # cows_and_bulls
-finiq bank
+Game of Cows & Bulls

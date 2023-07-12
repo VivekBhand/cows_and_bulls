@@ -54,7 +54,8 @@ function addRow() {
     }
 
     if (bulls === 4) {
-        document.getElementsByClassName("message")[0].innerHTML = "Hurray ! You won on ${num} try !!";
+        
+        document.getElementsByClassName("message")[0].innerHTML = `Hurray ! You won on attempt ${num}`;
         const letterImageDiv = document.querySelector(".letter-image");
         letterImageDiv.style.visibility = "visible";
         letterImageDiv.style.display = "block";

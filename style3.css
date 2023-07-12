@@ -9,7 +9,12 @@ body {
     height: 100vh;
     margin: 0;
 }
-
+.gameBody {
+    display: grid;
+    grid-template-rows: 4fr 2fr 6fr;
+    justify-content: center;
+    text-align: center;
+}
 /* Game header styles */
 .game_header {
     text-align: center;
@@ -25,6 +30,11 @@ p {
     font-size: 16px;
 }
 
+#guessInput {
+    margin: auto;
+    display: block;
+}
+
 input[type="text"] {
     margin-bottom: 10px;
     padding: 8px;
@@ -37,6 +47,7 @@ input[type="text"] {
 }
 
 button {
+    margin-top: 3vh;
     padding: 10px 16px;
     border-radius: 3px;
     background-color: #4CAF50;

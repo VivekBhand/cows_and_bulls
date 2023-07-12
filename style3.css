@@ -158,3 +158,26 @@ button:hover {
     background-color: #c5f5d9;
     font-weight: bold;
 }
+
+.otp-input {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 5px;
+  }
+
+  .otp-input input {
+    width: 40px;
+    height: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+  }
+
+  .otp-input input:not(:last-child) {
+    margin-right: 5px;
+  }
+
+  

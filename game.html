@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cows and Bulls</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <div class="gameBody">
+
+        <div class="gameHeader">
+            <h1 class="game_header">Cows and Bulls</h1>
+        </div>
+        <div class="gamePrompt">
+            <p>Guess the 4-digit number:</p>
+        </div>
+        <div class="gameInput">
+            <input type="text" id="guessInput" maxlength="4" />
+            <!-- <input id="guessInput" type="text" maxlength="1" />
+            <input id="guessInput" type="text" maxlength="1" />
+            <input id="guessInput" type="text" maxlength="1" />
+            <input id="guessInput" type="text" maxlength="1" /> -->
+            <button onclick="addRow()">Guess</button>
+        </div>
+        <div class="window">
+            <p class="message"></p>
+            <div class="letter-image">
+                <div class="animated-mail">
+                    <div class="back-fold"></div>
+                    <div class="letter">
+                        <div class="letter-border"></div>
+                        <div class="letter-title"></div>
+                        <div class="letter-context"></div>
+                        <div style="margin-top:3%; color: #000;margin-bottom: 0;">You Guessed it !!<p style="margin-top: 0%;">🔥🏆</p></div>
+                        <div class="letter-stamp">
+                            
+                            <div class="letter-stamp-inner"></div>
+                        </div>
+                    </div>
+                    <div class="top-fold"></div>
+                    <div class="body"></div>
+                    <div class="left-fold"></div>
+                </div>
+                <div class="shadow"></div>
+            </div>
+            <table class="table" id="result_table">
+                <thead class="table_head">
+                    <th> Attempt </th>
+                    <th> Guess </th>
+                    <th> Cows </th>
+                    <th> Bulls </th>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+
+        <script type="text/javascript" src="./main.js"></script>
+
+    </div>
+</body>
+
+</html>

@@ -1,65 +1,86 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <title>Cows and Bulls</title>
-    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
-    <div class="gameBody">
-
-        <div class="gameHeader">
-            <h1 class="game_header">Cows and Bulls</h1>
+<body class="background">
+    <div class="window">
+        <div class="menu">
+            <a class="anchor" href="./game.html">
+                <img class="anchorImage" src="./play.png" alt="Play">
+                <p style="color: black;font-weight: bold;font-size: 25px;">New Game</p>
+            </a>
         </div>
-        <div class="gamePrompt">
-            <p>Guess the 4-digit number:</p>
-        </div>
-        <div class="gameInput">
-            <input type="text" id="guessInput" maxlength="4" />
-            <!-- <input id="guessInput" type="text" maxlength="1" />
-            <input id="guessInput" type="text" maxlength="1" />
-            <input id="guessInput" type="text" maxlength="1" />
-            <input id="guessInput" type="text" maxlength="1" /> -->
-            <button onclick="addRow()">Guess</button>
-        </div>
-        <div class="window">
-            <p class="message"></p>
-            <div class="letter-image">
-                <div class="animated-mail">
-                    <div class="back-fold"></div>
-                    <div class="letter">
-                        <div class="letter-border"></div>
-                        <div class="letter-title"></div>
-                        <div class="letter-context"></div>
-                        <div style="margin-top:3%; color: #000;margin-bottom: 0;">You Guessed it !!<p style="margin-top: 0%;">🔥🏆</p></div>
-                        <div class="letter-stamp">
-                            
-                            <div class="letter-stamp-inner"></div>
-                        </div>
-                    </div>
-                    <div class="top-fold"></div>
-                    <div class="body"></div>
-                    <div class="left-fold"></div>
-                </div>
-                <div class="shadow"></div>
+        <div class="landing">
+            <div></div>
+            <div class="cowbullimage">
+                <img
+                    src="https://lh3.googleusercontent.com/0W53sbaZ6AMo2xjmYlU0maHvTVsduCI-VFqYJyyGgDEH7woXG7nDQAcnFb7FdkB9Fax2">
             </div>
-            <table class="table" id="result_table">
-                <thead class="table_head">
-                    <th> Attempt </th>
-                    <th> Guess </th>
-                    <th> Cows </th>
-                    <th> Bulls </th>
-                </thead>
-                <tbody>
+            <!-- <div>
+                <p>Vivek Bhand</p>
+                <p>Vijayalakshmi Magdum</p>
+                <p>Manshal Chaure</p>
+            </div> -->
+            <div></div>
+            <div class="tutorial">
+                <div class="popup">
+                    <button onclick="toggleVisible()" id="close">
+                        &times;
+                    </button>
+                    <h2>HOW TO PLAY</h2>
+                    <p class="content">
+                        Alrighty then, partner! Here's a fun and straightforward guide just for you:
+                        <br>
+                        <br>
 
-                </tbody>
-            </table>
+                        1.The game begins with the computer picking a secret four-digit number for you to crack. No
+                        repeating digits allowed, alright?
+                        <br>
+                        2.Now it's your turn to guess the secret number. Type in a four-digit number using your
+                        keyboard.
+                        <br>
+                        3.The computer will give you hints based on your guess. If a digit in your guess matches a digit
+                        in the secret number and is in the correct position, the computer will say "Bull!"
+                        <br>
+                        4.If a digit in your guess matches a digit in the secret number but is in the wrong position,
+                        the computer will say "Cow!"
+                        <br>
+                        5.Keep guessing and receiving hints from the computer until you finally corral the secret
+                        number. Giddy up!
+                        <br>
+                        <br>
+                        All the Bestttt!
+                    </p>
+                    <a class="vijayaButton" href="./game.html">Let's Go</a>
+                </div>
+            </div>
+
         </div>
+        <div class="how_to_play">
+            <a id="anchorImageHow" class="anchor" onclick="toggleVisible()" href="#">
+                <img  class="anchorImageHow" src="./how_to_play.png" alt="how to play">
+                <p style="color: black;font-weight: bold;font-size: 25px;">Help</p>
 
-        <script type="text/javascript" src="./main.js"></script>
-
+            </a>
+        </div>
     </div>
+    <script>
+        function toggleVisible() {
+            const howDiv = document.querySelector(".tutorial");
+            if (howDiv.style.visibility == "hidden") {
+                howDiv.style.visibility = "visible";
+                howDiv.style.display = "block";
+            }
+            else {
+                howDiv.style.visibility = "hidden";
+                howDiv.style.display = "none";
+            }
+
+        }
+    </script>
 </body>
 
 </html>

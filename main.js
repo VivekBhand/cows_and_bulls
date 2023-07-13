@@ -31,7 +31,10 @@ let num = 0;
 let prevBulls = 0;
 let prevCows = 0;
 
-function genNum() { }
+
+
+
+
 function addRow() {
     const guess = document.getElementById("guessInput").value;
     if (guess.length !== 4 || isNaN(guess)) {
@@ -109,3 +112,4 @@ guessInput.addEventListener("input", function () {
         submitBtn.click();
     }
 });
+
